@@ -1,0 +1,5 @@
+command : jq -rs '.[] | .event_type' 20150418_00.log | sort | uniq -c 
+
+This command reads all event types from the log file 
+
+This can be run from command prompt if jq is installed. 
